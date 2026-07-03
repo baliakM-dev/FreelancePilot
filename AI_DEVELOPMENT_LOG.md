@@ -123,3 +123,32 @@ Notes:
   rezolvuje pri štarte a Keycloak ešte nebeží.
 - /actuator/health overený manuálne proti bežiacej aplikácii s Postgres 17
   v Dockeri: {"status":"UP"}, ostatné endpointy chránené (403).
+
+---
+
+## Feature: Phase 2 – Frontend foundation
+
+Date: 2026-07-03
+
+AI used for:
+- scaffold Vite 8 + React 19 + TypeScript 6 projektu,
+- výmena oxlint (nový default Vite šablóny) za ESLint + Prettier podľa plánu,
+- inštalácia MUI, React Router, React Query, React Hook Form, Zod, Recharts,
+- AppShell + ThemeProvider + QueryProvider,
+- MainLayout / Sidebar / Topbar / PageContainer,
+- routing (login, dashboard, unauthorized, 404) s presmerovaním / → /dashboard,
+- fetch-based apiClient so session cookies a ProblemDetail chybami (bez axios),
+- LoginPage (disabled Keycloak button do Phase 4), DashboardPage placeholder,
+  UnauthorizedPage, NotFoundPage,
+- Vite dev proxy /api → localhost:8080.
+
+Human review changes:
+- zatiaľ žiadne (čaká na review v PR).
+
+Tests added:
+- žiadne (Phase 2 je scaffold bez logiky; testy pribudnú s formulármi a API).
+
+Notes:
+- Dve chyby zachytené pri builde: MUI Stack v tejto verzii neprijíma alignItems
+  ako prop (presunuté do sx) a TS 6 erasableSyntaxOnly zakazuje constructor
+  parameter properties (ApiError prepísaný na explicitné polia).
