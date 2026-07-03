@@ -371,6 +371,10 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 
 ## Phase 17 – CI/CD
 
+- [x] Vytvoriť vetvu `develop` (ADR 0008)
+- [ ] Nastaviť branch protection pre `main` a `develop`
+- [ ] Vytvoriť Neon projekt pre develop DB
+- [ ] Uložiť Neon connection string do GitHub Secrets
 - [ ] Vytvoriť `.github/workflows/backend.yml`
 - [ ] Vytvoriť `.github/workflows/frontend.yml`
 - [ ] Backend build
@@ -378,6 +382,9 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 - [ ] Frontend install
 - [ ] Frontend lint
 - [ ] Frontend build
+- [ ] CI na PR do `develop` (build + testy)
+- [ ] CD po merge do `develop`: Flyway migrácie na Neon
+- [ ] Rozhodnúť hosting backend/frontend/Keycloak pre develop (nový ADR)
 - [ ] Pridať badge do README
 
 ---

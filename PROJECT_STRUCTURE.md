@@ -325,6 +325,7 @@ docs
     0005-version-tax-rules-by-year.md
     0006-use-calculation-engine.md
     0007-use-xls-export.md
+    0008-branching-and-environments.md
 
   features
     user-profile.md
