@@ -27,7 +27,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     credentials: 'include',
     ...init,
     headers: {
-      'Content-Type': 'application/json',
+      ...(init?.body !== undefined && { 'Content-Type': 'application/json' }),
       ...init?.headers,
     },
   });

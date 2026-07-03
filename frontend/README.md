@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# FreelancePilot – frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + TypeScript + Vite frontend pre FreelancePilot (BFF architektúra —
+frontend volá výhradne backend API, session drží backend).
 
-Currently, two official plugins are available:
+## Príkazy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm run dev      # dev server s proxy /api -> http://localhost:8080
+npm run lint     # ESLint
+npm run format   # Prettier na src/
+npm run build    # tsc -b + vite build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Štruktúra
+
+```text
+src
+  app        AppShell, providers (Theme, Query), layout (MainLayout, Sidebar, Topbar)
+  router     AppRouter, routes
+  api        apiClient (fetch, session cookies, ProblemDetail chyby)
+  pages      LoginPage, DashboardPage, UnauthorizedPage, NotFoundPage
+  shared     zdieľané komponenty (ErrorPage, ...)
+```
+
+Detailný cieľový stav je v koreňovom `PROJECT_STRUCTURE.md`; pravidlá pre
+vývoj vo `frontend/CLAUDE.md`.
+
+## Konfigurácia
+
+- `VITE_API_BASE_URL` – base URL backendu (default `/api`, viď `.env.example`
+  v koreňovom adresári).
