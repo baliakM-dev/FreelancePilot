@@ -93,3 +93,33 @@ Tests added:
 Notes:
 - Konkrétne sadzby a násobky v specu sú ilustračné — pri seede pravidiel ich
   treba overiť proti aktuálnej legislatíve pre daný rok.
+
+---
+
+## Feature: Phase 1 – Backend foundation
+
+Date: 2026-07-03
+
+AI used for:
+- scaffold Spring Boot 4.1.0 projektu cez start.spring.io (Java 25, Maven wrapper,
+  web, validation, data-jpa, postgresql, flyway, security, oauth2-client,
+  actuator, testcontainers),
+- doplnenie MapStruct 1.6.3 a springdoc-openapi 3.0.3 (overenie kompatibility
+  s Boot 4 proti Maven Central),
+- package štruktúra modulov s package-info.java,
+- application.yml / application-local.yml / application-test.yml,
+- BusinessException + GlobalExceptionHandler s ProblemDetail (409/400/500),
+- dočasný SecurityConfig (verejný len actuator health a OpenAPI docs),
+- pin Testcontainers Postgres na postgres:17 (namiesto latest).
+
+Human review changes:
+- zatiaľ žiadne (čaká na review v PR).
+
+Tests added:
+- contextLoads s Testcontainers PostgreSQL 17 (vygenerovaný, aktivovaný test profil).
+
+Notes:
+- OAuth2/OIDC klient sa zámerne nekonfiguruje do Phase 4 — issuer-uri sa
+  rezolvuje pri štarte a Keycloak ešte nebeží.
+- /actuator/health overený manuálne proti bežiacej aplikácii s Postgres 17
+  v Dockeri: {"status":"UP"}, ostatné endpointy chránené (403).
