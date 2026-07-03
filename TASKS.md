@@ -7,17 +7,17 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 ## Phase 0 – Repository foundation
 
 - [x] Vytvoriť Git repozitár `FreelancePilot`
-- [ ] Pridať `README.md`
-- [ ] Pridať `TASKS.md`
-- [ ] Pridať `PROJECT_STRUCTURE.md`
-- [ ] Pridať `CLAUDE.md`
-- [ ] Pridať `SKILLS.md`
-- [ ] Pridať `AI_DEVELOPMENT_LOG.md`
-- [ ] Pridať `.env.example`
-- [ ] Pridať `.gitignore`
-- [ ] Pridať `.editorconfig`
-- [ ] Vytvoriť priečinky `backend`, `frontend`, `infra`, `docs`, `scripts`
-- [ ] Vytvoriť prvý commit `chore: initialize repository structure`
+- [x] Pridať `README.md`
+- [x] Pridať `TASKS.md`
+- [x] Pridať `PROJECT_STRUCTURE.md`
+- [x] Pridať `CLAUDE.md`
+- [x] Pridať `SKILLS.md`
+- [x] Pridať `AI_DEVELOPMENT_LOG.md`
+- [x] Pridať `.env.example`
+- [x] Pridať `.gitignore`
+- [x] Pridať `.editorconfig`
+- [x] Vytvoriť priečinky `backend`, `frontend`, `infra`, `docs`, `scripts`
+- [x] Vytvoriť prvý commit `chore: initialize repository structure`
 
 ---
 
