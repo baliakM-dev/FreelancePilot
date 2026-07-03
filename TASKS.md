@@ -53,25 +53,25 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 
 ## Phase 2 – Frontend foundation
 
-- [ ] Vytvoriť React + TypeScript + Vite projekt v `frontend`
-- [ ] Pridať Material UI
-- [ ] Pridať React Router
-- [ ] Pridať React Query
-- [ ] Pridať React Hook Form
-- [ ] Pridať Zod alebo Yup
-- [ ] Pridať Recharts alebo MUI X Charts
-- [ ] Nastaviť ESLint
-- [ ] Nastaviť Prettier
-- [ ] Vytvoriť `AppShell`
-- [ ] Vytvoriť `MainLayout`
-- [ ] Vytvoriť `Sidebar`
-- [ ] Vytvoriť `Topbar`
-- [ ] Vytvoriť routing
-- [ ] Vytvoriť `LoginPage`
-- [ ] Vytvoriť `DashboardPage` placeholder
-- [ ] Vytvoriť `UnauthorizedPage`
-- [ ] Vytvoriť `NotFoundPage`
-- [ ] Vytvoriť `apiClient`
+- [x] Vytvoriť React + TypeScript + Vite projekt v `frontend`
+- [x] Pridať Material UI
+- [x] Pridať React Router
+- [x] Pridať React Query
+- [x] Pridať React Hook Form
+- [x] Pridať Zod alebo Yup (zvolený Zod)
+- [x] Pridať Recharts alebo MUI X Charts (zvolený Recharts)
+- [x] Nastaviť ESLint
+- [x] Nastaviť Prettier
+- [x] Vytvoriť `AppShell`
+- [x] Vytvoriť `MainLayout`
+- [x] Vytvoriť `Sidebar`
+- [x] Vytvoriť `Topbar`
+- [x] Vytvoriť routing
+- [x] Vytvoriť `LoginPage`
+- [x] Vytvoriť `DashboardPage` placeholder
+- [x] Vytvoriť `UnauthorizedPage`
+- [x] Vytvoriť `NotFoundPage`
+- [x] Vytvoriť `apiClient`
 
 ---
 
