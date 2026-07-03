@@ -2,8 +2,8 @@
 
 ## Backend stack
 
-- Java 21
-- Spring Boot
+- Java 25
+- Spring Boot 4
 - Spring Web MVC
 - Spring Security
 - OAuth2/OIDC Client

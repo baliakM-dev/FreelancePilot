@@ -23,31 +23,31 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 
 ## Phase 1 – Backend foundation
 
-- [ ] Vytvoriť Spring Boot 4 projekt v `backend`
-- [ ] Nastaviť Java 25
-- [ ] Nastaviť Maven wrapper
-- [ ] Pridať Spring Web
-- [ ] Pridať Spring Validation
-- [ ] Pridať Spring Data JPA
-- [ ] Pridať PostgreSQL Driver
-- [ ] Pridať Flyway
-- [ ] Pridať Spring Security
-- [ ] Pridať OAuth2 Client
-- [ ] Pridať Actuator
-- [ ] Pridať MapStruct
-- [ ] Pridať springdoc-openapi
-- [ ] Pridať JUnit 5
-- [ ] Pridať Mockito
-- [ ] Pridať Testcontainers
-- [ ] Vytvoriť package `sk.martin.freelancepilot`
-- [ ] Vytvoriť package štruktúru `auth`, `user`, `profile`, `income`, `expense`, `contribution`, `rules`, `calculation`, `dashboard`, `export`, `audit`, `common`, `config`
-- [ ] Nastaviť `application.yml`
-- [ ] Nastaviť `application-local.yml`
-- [ ] Nastaviť `application-test.yml`
-- [ ] Vytvoriť `GlobalExceptionHandler`
-- [ ] Vytvoriť `BusinessException`
-- [ ] Nastaviť ProblemDetail error response
-- [ ] Overiť `/actuator/health`
+- [x] Vytvoriť Spring Boot 4 projekt v `backend`
+- [x] Nastaviť Java 25
+- [x] Nastaviť Maven wrapper
+- [x] Pridať Spring Web
+- [x] Pridať Spring Validation
+- [x] Pridať Spring Data JPA
+- [x] Pridať PostgreSQL Driver
+- [x] Pridať Flyway
+- [x] Pridať Spring Security
+- [x] Pridať OAuth2 Client
+- [x] Pridať Actuator
+- [x] Pridať MapStruct
+- [x] Pridať springdoc-openapi
+- [x] Pridať JUnit 5
+- [x] Pridať Mockito
+- [x] Pridať Testcontainers
+- [x] Vytvoriť package `sk.martin.freelancepilot`
+- [x] Vytvoriť package štruktúru `auth`, `user`, `profile`, `income`, `expense`, `contribution`, `rules`, `calculation`, `dashboard`, `export`, `audit`, `common`, `config`
+- [x] Nastaviť `application.yml`
+- [x] Nastaviť `application-local.yml`
+- [x] Nastaviť `application-test.yml`
+- [x] Vytvoriť `GlobalExceptionHandler`
+- [x] Vytvoriť `BusinessException`
+- [x] Nastaviť ProblemDetail error response
+- [x] Overiť `/actuator/health`
 
 ---
 
@@ -372,7 +372,7 @@ Tento súbor slúži ako hlavný checklist pre vývoj projektu FreelancePilot.
 ## Phase 17 – CI/CD
 
 - [x] Vytvoriť vetvu `develop` (ADR 0008)
-- [ ] Nastaviť branch protection pre `main` a `develop`
+- [x] Nastaviť branch protection pre `main` a `develop`
 - [ ] Vytvoriť Neon projekt pre develop DB
 - [ ] Uložiť Neon connection string do GitHub Secrets
 - [ ] Vytvoriť `.github/workflows/backend.yml`

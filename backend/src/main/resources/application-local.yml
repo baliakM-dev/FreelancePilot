@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/freelancepilot
+    username: freelancepilot
+    password: changeme
+
+# OAuth2/OIDC klient sa konfiguruje vo Phase 4 (Keycloak + BFF).
+# issuer-uri sa rezolvuje pri starte aplikacie, preto sa neprida skor,
+# nez bezi Keycloak z docker compose.
+
+logging:
+  level:
+    sk.martin.freelancepilot: DEBUG
